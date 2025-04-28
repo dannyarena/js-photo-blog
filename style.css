@@ -5,7 +5,7 @@ body {
   }
   
   .bacheca {
-    background: url('img\wall.png') repeat;
+    background: url('img/cork.png') repeat;
     min-height: 100vh;
     padding: 40px 20px;
     text-align: center;
