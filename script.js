@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.bacheca');
+
+const overlay = document.querySelector('.overlay');
+const overlayImg = document.querySelector('.overlay-img');
+const closeBtn = document.querySelector('.close-btn');
+
   
     fetch('https://lanciweb.github.io/demo/api/pictures/')
       .then(response => response.json())
