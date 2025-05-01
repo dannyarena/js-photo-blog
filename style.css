@@ -85,3 +85,21 @@ body {
   .hidden {
     display: none;
   }
+
+  .foto {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* 🔥 Cambia il cursore */
+  }
+  
+  .foto:hover {
+    transform: scale(1.1) rotate(10deg); /* 🔥 Zoom e rotazione */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 🔥 Ombra più grande */
+  }
+  
+
+  .polaroid:hover .puntina {
+    opacity: 0;
+  }
+  
