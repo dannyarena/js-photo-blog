@@ -8,14 +8,19 @@ body {
     background: url('img/cork.png') repeat;
     min-height: 100vh;
     padding: 40px 20px;
-    text-align: center;
-  }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    justify-items: center; 
+}
   
-  h1 {
+h1 {
+    grid-column: 1 / -1; 
     font-family: 'Edu TAS Beginner', sans-serif;
     font-size: 3rem;
     margin-bottom: 40px;
-  }
+    text-align: center;
+}
   
   .polaroid {
     display: inline-block;
@@ -90,12 +95,12 @@ body {
     width: 100%;
     border-radius: 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; /* 🔥 Cambia il cursore */
+    cursor: pointer; /* Cambia il cursore */
   }
   
   .foto:hover {
-    transform: scale(1.1) rotate(10deg); /* 🔥 Zoom e rotazione */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 🔥 Ombra più grande */
+    transform: scale(1.1) rotate(10deg); /* Zoom e rotazione */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Ombra più grande */
   }
   
 
